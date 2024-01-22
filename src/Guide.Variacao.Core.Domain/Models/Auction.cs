@@ -3,6 +3,7 @@
     public class Auction : BaseModel
     {
         public Guid StockId { get; set; }
+        public Stock Stock { get; set; } = new Stock();
 
         public DateTime TimeStamp { get; set; }
         public double Open { get; set; }

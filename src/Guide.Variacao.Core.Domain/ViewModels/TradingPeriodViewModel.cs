@@ -4,6 +4,8 @@ namespace Guide.Variacao.Core.Domain.ViewModels
 {
     public class TradingPeriodViewModel : BaseViewModel
     {
+        public StockViewModel Stock = new();
+
         public string TimeZone { get; set; }
 
         public TradingPeriodType Type { get; set; }

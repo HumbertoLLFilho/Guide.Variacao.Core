@@ -5,6 +5,7 @@ namespace Guide.Variacao.Core.Domain.Models
     public class TradingPeriod : BaseModel
     {
         public Guid StockId { get; set; }
+        public Stock Stock { get; set; } = new Stock();
 
         public string TimeZone { get; set; }
 

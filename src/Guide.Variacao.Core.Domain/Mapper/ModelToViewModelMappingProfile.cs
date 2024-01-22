@@ -10,8 +10,12 @@ namespace Guide.Variacao.Core.Domain.Mapper
         {
             CreateMap<BaseModel, BaseViewModel>();
 
-            CreateMap<Stock, StockViewModel>();
+            CreateMap<Stock, StockViewModel>()
+                .ForMember(viewModel => viewModel.AuctionsViewModel, conf => conf.MapFrom(value => value.Auctions))
+                .ForMember(viewModel => viewModel.TradingPeriodsViewModel, conf => conf.MapFrom(value => value.TradingPeriods));
+
             CreateMap<Auction, AuctionViewModel>();
+
             CreateMap<TradingPeriod, TradingPeriodViewModel>();
         }
     }
