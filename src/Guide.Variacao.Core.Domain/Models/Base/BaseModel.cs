@@ -7,6 +7,7 @@
             Id = Guid.NewGuid();
             IsDeleted = false;
             CreatedAt = DateTime.Now;
+            ModifiedAt = DateTime.Now;
         }
 
         public Guid Id { get; }
