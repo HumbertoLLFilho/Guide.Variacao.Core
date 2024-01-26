@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>Guide.Variacao.Core.Domain</Title>
+    <Authors>Humberto Filho</Authors>
+    <Company />
+    <Product>Guide - Variação de ativo</Product>
+    <Description>Domain models for Back/Front-End</Description>
+    <PackageReleaseNotes>Primeira versão do pacote</PackageReleaseNotes>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>HLLF.$(AssemblyName)</PackageId>
+    <RepositoryUrl>https://github.com/HumbertoLLFilho/Guide.Variacao.Core</RepositoryUrl>
+    <Version>1.0.2</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+
+</Project>
